@@ -1,7 +1,7 @@
 <script lang="ts">
   import WaitlistForm from './WaitlistForm.svelte'
-  import ZBLogo from './assets/ZB1.png'
-  import GasStoveIcon from './assets/appliances/010-gas-stove.png'
+  import ZBLogo from '$lib/assets/ZB1.png'
+  import GasStoveIcon from '$lib/assets/appliances/010-gas-stove.png'
 </script>
 
 <section class="header">
