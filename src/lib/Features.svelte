@@ -1,19 +1,22 @@
 <script lang="ts">
+  import GasStoveIcon from '../assets/appliances/010-gas-stove.png'
+
   const features = [
     {
       icon: '⏱️',
-      title: 'Time Tracking',
-      description: 'Accurately track installation time and labor costs across multiple projects and teams.'
+      title: 'GPS Time Tracking',
+      description: 'Accurately track installation time and labor costs across multiple projects using mobile GPS location.'
     },
     {
-      icon: '📦',
-      title: 'Installation Tracking',
-      description: 'Monitor appliance installations from delivery to completion with real-time updates.'
+      icon: GasStoveIcon,
+      isImage: true,
+      title: 'Installation Management',
+      description: 'Monitor appliance installations from delivery to completion with real-time updates from installers.'
     },
     {
       icon: '🔧',
-      title: 'Defect Management',
-      description: 'Document and resolve defects efficiently with photo uploads and status tracking.'
+      title: 'Blocker Tracking',
+      description: 'Document, report and resolve blockers efficiently with photo uploads, notes and statuses that automatically keep contractors and retailers informed.'
     },
     {
       icon: '💰',
@@ -21,9 +24,9 @@
       description: 'Generate professional invoices and billing statements with automated calculations.'
     },
     {
-      icon: '🏢',
-      title: 'Project Management',
-      description: 'Coordinate complex high-rise building projects with multiple contractors and retailers.'
+      icon: '🔄️',
+      title: 'Contractor & Retailer Synchronization',
+      description: 'Automatically coordinate complex high-rise building projects between contractors and retailers.'
     },
     {
       icon: '📱',
@@ -43,7 +46,13 @@
     <div class="features-grid">
       {#each features as feature}
         <div class="feature-card">
-          <div class="feature-icon">{feature.icon}</div>
+          <div class="feature-icon">
+            {#if feature.isImage}
+              <img src={feature.icon} alt={feature.title} class="icon-image" />
+            {:else}
+              {feature.icon}
+            {/if}
+          </div>
           <h3>{feature.title}</h3>
           <p>{feature.description}</p>
         </div>
@@ -99,6 +108,12 @@
   .feature-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+  }
+
+  .icon-image {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
   }
 
   .feature-card h3 {

@@ -1,22 +1,6 @@
-<script lang="ts">
-    type Status = 'idle' | 'success';
-  let submitStatus: Status = $state('idle');
-</script>
-
 <div class="waitlist-form">
   <h2>Join the Waitlist</h2>
   <p class="subtitle">Be the first to experience the future of appliance installation management.</p>
-
-  {#if submitStatus === 'success'}
-    <div class="success-message">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="10" fill="var(--color-success)" opacity="0.2"/>
-        <path d="M8 12L11 15L16 9" stroke="var(--color-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <h3>You're on the list!</h3>
-      <p>We'll notify you as soon as ZipBuilder AIMS launches.</p>
-    </div>
-  {:else}
     <form 
       name="waitlist" 
       method="POST" 
@@ -62,10 +46,9 @@
       </button>
 
       <p class="privacy-notice">
-        We respect your privacy. No spam, unsubscribe anytime.
+        Not a mailing list. We will only reach out when we launch.
       </p>
     </form>
-  {/if}
 </div>
 
 <style>
@@ -110,23 +93,4 @@
     color: var(--color-text-secondary);
     margin-top: 1rem;
   }
-
-  .success-message {
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-
-  .success-message svg {
-    margin-bottom: 1rem;
-  }
-
-  .success-message h3 {
-    color: var(--color-success);
-    margin-bottom: 0.5rem;
-  }
-
-  .success-message p {
-    color: var(--color-text-secondary);
-  }
-
 </style>
