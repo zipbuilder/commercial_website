@@ -1,5 +1,5 @@
 <script lang="ts">
-  import GasStoveIcon from '../assets/appliances/010-gas-stove.png'
+  import GasStoveIcon from './assets/appliances/010-gas-stove.png'
 
   const features = [
     {
