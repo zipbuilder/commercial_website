@@ -18,14 +18,14 @@
       <div class="hero-text">
         <h1>Transform Your Appliance Installation Business</h1>
         <p class="tagline">
-          The all-in-one Appliance Installation Management Software (AIMS) designed for contractors and commercial retailers working in residential high-rise projects.
+          The all-in-one Appliance Installation Management Software (AIMS) designed for contractors and commercial distributors working in residential high-rise projects.
         </p>
         <div class="features-preview">
           <div class="feature-badge">⏱️ GPS Time Tracking</div>
           <div class="feature-badge"><img src="/appliances/010-gas-stove.png" alt="Installation" class="badge-icon" /> Installation Management</div>
           <div class="feature-badge">🔧 Blocker Tracking</div>
           <div class="feature-badge">💰 Billing Statements</div>
-          <div class="feature-badge">🔄 Contractor & Retailer Synchronization</div>
+          <div class="feature-badge">🔄 Contractor & Distributor Synchronization</div>
         </div>
       </div>
       <div class="hero-form">

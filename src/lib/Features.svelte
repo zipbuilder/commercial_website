@@ -14,7 +14,7 @@
     {
       icon: '🔧',
       title: 'Blocker Tracking',
-      description: 'Document, report and resolve blockers efficiently with photo uploads, notes and statuses that automatically keep contractors and retailers informed.'
+      description: 'Document, report and resolve blockers efficiently with photo uploads, notes and statuses that automatically keep contractors and distributors informed.'
     },
     {
       icon: '💰',
@@ -23,8 +23,8 @@
     },
     {
       icon: '🔄️',
-      title: 'Contractor & Retailer Synchronization',
-      description: 'Automatically coordinate complex high-rise building projects between contractors and retailers.'
+      title: 'Contractor & Distributor Synchronization',
+      description: 'Automatically coordinate complex high-rise building projects between contractors and distributors.'
     },
     {
       icon: '📱',
@@ -38,7 +38,7 @@
   <div class="container">
     <div class="section-header">
       <h2>Everything You Need to Streamline Operations</h2>
-      <p>Built specifically for appliance installation contractors and commercial retailers</p>
+      <p>Built specifically for appliance installation contractors and commercial distributors</p>
     </div>
 
     <div class="features-grid">
