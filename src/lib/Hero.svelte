@@ -1,7 +1,5 @@
 <script lang="ts">
   import WaitlistForm from './WaitlistForm.svelte'
-  import ZBLogo from '$lib/assets/ZB1.png'
-  import GasStoveIcon from '$lib/assets/appliances/010-gas-stove.png'
 </script>
 
 <section class="header">
@@ -10,7 +8,7 @@
       <h1>ZipBuilder</h1>
     </div>
     <div class="header-logo">
-      <img src={ZBLogo} alt="ZipBuilder Logo" />
+      <img src="/ZB.png" alt="ZipBuilder Logo" />
     </div>
   </div>
 </section>
@@ -24,7 +22,7 @@
         </p>
         <div class="features-preview">
           <div class="feature-badge">⏱️ GPS Time Tracking</div>
-          <div class="feature-badge"><img src={GasStoveIcon} alt="Installation" class="badge-icon" /> Installation Management</div>
+          <div class="feature-badge"><img src="/appliances/010-gas-stove.png" alt="Installation" class="badge-icon" /> Installation Management</div>
           <div class="feature-badge">🔧 Blocker Tracking</div>
           <div class="feature-badge">💰 Billing Statements</div>
           <div class="feature-badge">🔄 Contractor & Retailer Synchronization</div>

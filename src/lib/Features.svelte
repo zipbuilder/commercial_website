@@ -1,6 +1,4 @@
 <script lang="ts">
-  import GasStoveIcon from '$lib/assets/appliances/010-gas-stove.png'
-
   const features = [
     {
       icon: '⏱️',
@@ -8,7 +6,7 @@
       description: 'Accurately track installation time and labor costs across multiple projects using mobile GPS location.'
     },
     {
-      icon: GasStoveIcon,
+      icon: '/appliances/010-gas-stove.png',
       isImage: true,
       title: 'Installation Management',
       description: 'Monitor appliance installations from delivery to completion with real-time updates from installers.'
