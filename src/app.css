@@ -31,10 +31,31 @@
   padding: 0;
 }
 
-body {
+html, body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE 10+ */
+  -ms-overflow-style: none;
+  /* Smooth scrolling on iOS/modern mobile */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* WebKit browsers (Chrome, Safari, Edge Chromium, Opera) */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 0;    /* remove scrollbar space */
+  height: 0;   /* remove horizontal scrollbar space */
+  background: transparent;
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background: transparent;
 }
 
 #app {
